@@ -14,6 +14,9 @@ Using : Google Firebase - Realtime DB & Storage, Google Maps, Google Authenticat
 
 [![IMAGE ALT TEXT HERE](https://i.ibb.co/KqcLQq7/citycourts.png)](https://www.youtube.com/watch?v=aXUVrnOXwes&t=1s)
 
-add google-services.json to use your google credentials.
+**INSTRUCTIONS**:
+*googleApiKey: https://developers.google.com/maps/documentation/android/start#get-key
+* at src\debug\res\values\google_maps_api.xml change "YourApiKey" to the correct GoogleApiKey
+* at \app\google-services.json change "YourApiKey" to the correct GoogleApiKey
 
 Contact me to get the .apk !
