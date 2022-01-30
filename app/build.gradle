@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    ndkVersion '21.3.6528147'
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.mycitycourts"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.0-alpha02'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'com.google.firebase:firebase-database:19.5.0'
+    implementation 'androidx.wear:wear:1.1.0'
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.maps.android:android-maps-utils:2.0.3'
+    implementation 'com.google.firebase:firebase-analytics:17.6.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'androidx.annotation:annotation:1.1.0'
+    implementation "com.zlc.glide:webpdecoder:1.3.4.8.0"
+    implementation 'com.firebaseui:firebase-ui-storage:6.2.0'
+    implementation 'it.sephiroth.android.library.imagezoom:imagezoom:2.2.5'
+    implementation 'com.elconfidencial.bubbleshowcase:bubbleshowcase:1.3.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    /*
+    implementation 'com.orhanobut:logger:2.2.0' // Helps Make Logger more GUI
+    */
+
+    /*
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5' // Installs Leak app to your mobile. to find and track leaks.
+
+     */
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+}

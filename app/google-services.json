@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "187724508223",
+    "firebase_url": "https://mycitycourts.firebaseio.com",
+    "project_id": "mycitycourts",
+    "storage_bucket": "mycitycourts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187724508223:android:88837e8e836b5db1769c8a",
+        "android_client_info": {
+          "package_name": "com.example.mycitycourts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187724508223-oss8u0oa60tsneib81fm9nh4vso4cvn3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mycitycourts",
+            "certificate_hash": "7d628e3b3f5621cf68c4304b3de5259970316894"
+          }
+        },
+        {
+          "client_id": "187724508223-bflrdqjnoldvbavuia272f921n82jql2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YourApiKey"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187724508223-bflrdqjnoldvbavuia272f921n82jql2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

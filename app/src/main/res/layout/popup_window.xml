@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/reg_centre_button"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Enter Your email:"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/tv_emailInsert"
+        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_below="@+id/tv_ques"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:hint="@string/yourmail_example_com"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_emailInsert"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+
+
+        <Button
+            android:background="@drawable/reg_centre_button"
+            android:id="@+id/btn_send_pu"
+            android:textColor="@color/whiteTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginBottom="30dp"
+            android:onClick="onSendClicked"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:background="@drawable/reg_centre_button"
+            android:id="@+id/btn_close_pu"
+            android:textColor="@color/whiteTextColor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:onClick="onCloseClicked"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
